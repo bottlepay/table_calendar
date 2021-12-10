@@ -52,3 +52,16 @@ bool isSameDay(DateTime? a, DateTime? b) {
 
   return a.year == b.year && a.month == b.month && a.day == b.day;
 }
+
+/// Nudges widget in an `x` or `y` pixel direction.
+extension Nudge on Widget {
+  /// Transform this widget `x` or `y` pixels.
+  Widget nudge({
+    double x = 0.0,
+    double y = 0.0,
+  }) =>
+      Transform.translate(
+        offset: Offset(x, y),
+        child: this,
+      );
+}

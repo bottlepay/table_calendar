@@ -54,12 +54,6 @@ class HeaderStyle {
   /// Determines how much of ripple animation is visible during taps.
   final EdgeInsets rightChevronPadding;
 
-  /// External margin of left chevron.
-  final EdgeInsets leftChevronMargin;
-
-  /// External margin of right chevron.
-  final EdgeInsets rightChevronMargin;
-
   /// Widget used for left chevron.
   ///
   /// Tapping on it will navigate to previous calendar page.
@@ -97,8 +91,6 @@ class HeaderStyle {
         const EdgeInsets.symmetric(horizontal: 10.0, vertical: 4.0),
     this.leftChevronPadding = const EdgeInsets.all(12.0),
     this.rightChevronPadding = const EdgeInsets.all(12.0),
-    this.leftChevronMargin = const EdgeInsets.symmetric(horizontal: 8.0),
-    this.rightChevronMargin = const EdgeInsets.symmetric(horizontal: 8.0),
     this.leftChevronIcon = const Icon(Icons.chevron_left),
     this.rightChevronIcon = const Icon(Icons.chevron_right),
     this.leftChevronVisible = true,
